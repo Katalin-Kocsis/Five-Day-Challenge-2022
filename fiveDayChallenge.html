@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 DAY CHALLENGE - 2022</title>
+    <link rel="stylesheet" href="fiveDayChallenge.css">
+    <script src="fiveDayChallenge.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+
+        <b><div class="title">
+            <img id="dance_logo" src="dance_logo.jpg">
+            <ul>
+                <h1 id="header1">MINDEN, AMI VERSENYTÁNC</h1> <!--Úgy tudtam a főcímet és az alcímet egymás alá 
+                igazítani, hogy az ul és li tageket alkalmaztam.-->
+                <li id="alcím">"DANCERS ARE MADE, NOT BORN."</li>
+            </ul>
+        </div></b>
+        
+
+        <nav>
+            <ul>
+                <li>
+                    <b><a href="">Főoldal</a></b>
+                       <ul>
+
+                       <li><a href="">Helyszínek</a></li>
+                       <li><a href="">Árak</a></li>
+
+                       </ul>
+                </li>
+
+                <li>
+                    <b><a href="">Képek</a></b>
+                    <ul>
+
+                        <li><a href="">Verseny fotók</a></li>
+                        <li><a href="">Edzések</a></li>
+                        <li><a href="">Magánórák</a></li>
+                        <li><a href="">Táborok</a></li>
+
+                    </ul>
+                </li>
+
+                <li>
+                    <b><a href="">Tánc típusok</a></b>
+                    <ul>
+
+                        <li><a href="">Angol keringő</a></li>
+                        <li><a href="">Bécsi keringő</a></li>
+                        <li><a href="">Slow Fox</a></li>
+                        <li><a href="">Quick Step</a></li>
+                        <li><a href="">Tangó</a></li>
+                        <li><a href="">Cha-cha-cha</a></li>
+                        <li><a href="">Samba</a></li>
+                        <li><a href="">Rumba</a></li>
+                        <li><a href="">Paso Doble</a></li>
+                        <li><a href="">Jive</a></li>
+                    
+                    </ul>
+                </li>
+
+                <li>
+                    <b><a href="">Kapcsolat</a></b>
+                       <ul>
+
+                       <li><a href="">E-mail cím</a></li> 
+                       <li><a href="">Telefonszám</a></li>
+                       <li><a href="">Térkép</a></li>
+
+                       </ul>
+                </li>
+
+                <input type="text" id="mySearch" onclick="myFunction()" placeholder="Keresés..." title="Type in a category">
+
+                <li><section id="kosár"><h3 style="color: rgb(12, 219, 205);">KOSÁR</h3></section></li>
+            </ul>
+        </nav>
+    </header>
+ 
+    <p></p> <!--A kitöltetlen paragrafus helyekkel csupán térközt akartam elérni.-->
+
+    <main id="main">
+        <img id="dancer_packages" src="dancer_packages.png">
+        <span id="választhatóCsomagok">VÁLASZTHATÓ CSOMAGOK:</span>
+        <button id="megnézem">MEGNÉZEM</button>   
+    </main>
+
+    <form>
+        <div>
+          <p></p> <!--A térköz miatt szúrtam be egy üres paragrafust.-->
+          <b><label id="tánctanításFolyamata">A tánctanítás folyamata: </label></b>
+          <button id="megnézem1">MEGNÉZEM</button>
+        </div>
+
+        <div>
+           <p></p> <!--A térköz miatt szúrtam be egy üres paragrafust.-->
+           <b><label id="tánctanításFolyamata">Rólunk: </label></b>
+           <button id="megnézem2">MEGNÉZEM</button> <!--The <input type="submit"> defines a button for 
+           submitting the form data to a form-handler. The form-handler is typically a file on the server with 
+           a script for processing input data.-->
+        </div>
+        <b><p id="guideText">Bátran kattints a "megnézem" gombra a részletekért!</p></b>
+      </form>
+
+      <div id="akciókDiv">
+        <img id="akciókImage" src="akciók.jpg">
+        <ul id="akciókFelirat">AKCIÓK
+          <li><img id="féléves_bérlet" src="féléves_bérlet.jpg"></li>
+          <li><img id="negyedéves_bérlet" src="negyedéves_bérlet.jpg"></li>
+        </ul> <!--Az ul és li tagek segítségével tudok elemeket egymás alá rendezni html a live serveren. Nyilván 
+        az ul-nak magában kell foglalnia az összes li elemet, amit alá szeretnék rendezni.-->
+      </div>
+
+      <div id="feliratkozásDiv">
+        <ul id="feliratkozásHírlevélre">FELIRATKOZÁS HÍRLEVÉLRE:
+            <li id="vezetéknév">AZ ÖN VEZETÉKNEVE:<input id="vezetéknévInput"></input></li>
+            <li id="vezetéknév">AZ ÖN KERESZTNEVE:<input id="vezetéknévInput"></input></li>
+            <li id="e-mailCím">AZ ÖN <br>E-MAIL CÍME:<input id="E-mailInput"></input></li>
+            <!--A br tag segítségével sortörést értem el a szövegben.-->
+        </ul>
+      </div>
+
+      <div>
+        <input id="hozzájárulásNégyzet"></input>
+        <span id="hozzájárulásSzövege">Hozzájárulok ahhoz, hogy a Versenytánc Kft. a nevemet és e-mail címemet 
+        hírlevelezési céllal kezelje, és a részemre gazdasági reklámot is tartalmazó e-mail hírleveleket küldjön.
+        </span>
+      </div>
+
+      <div>
+        <button id="feliratkozásButton"><span id="feliratkozásButtonSzövege">FELIRATKOZÁS</span></button> <!--A span tagre azért volt szükség, hogy
+        külön a szöveget is tudjam formázni.-->
+        <p></p>
+      </div>
+      
+      <section id="tips">
+
+          <h2 id="tippek">TIPPEK ÉS TRÜKKÖK A HATÉKONY TÁNCTANULÁSHOZ:</h2> <!--label taggel nem engedte a program, 
+          hogy lejjebb vigyem a szöveget CSS-ben, így a h2 taget használtam (paragrafus taggel is működött volna).-->
+          <article class="tips-cards">
+
+            <article class="tips-card">
+              <img id="ruáhaztPic" src="dancersWear1.jpg" alt="ruházat"/>
+              <div>
+                <h3 id="szövegdobozCím" style="color:rgb(1, 5, 4)">RUHÁZAT</h3>
+                <p class="text" style="color:rgb(1, 36, 34)">From black leotards to bold colours, our dance 
+                leotard collection by top brands like Bloch, Capezio, and Move Dance brings you modern and classical 
+                styles. Whether you’re after simple camisole leotards, or more elaborate cross strap designs, all 
+                styles offer optimum comfort and support whilst dancing. They’re perfect for ballet classes, 
+                examinations, auditions, shows, and even fashion wear! Our collection of lace leotards and mesh 
+                leotards are especially popular. Beginners and professionals alike benefit from the high performance 
+                fabrics which all have a fantastic fit and some have features to keep you cool. Check out our range 
+                of comfortable and stretchy dance tights to wear with your leotard.</p>
+                <p class="date" style="color:rgb(14, 244, 229)">2022. 10. 01.</p>
+              </div>
+              <button id="részletekButton" class="btn">RÉSZLETEK</button>
+            </article>
+
+            <article class="tips-card-middle-card">
+              <img id="partnerPic" src="partner1.jpg" alt="partner"/>
+              <div>
+                <h3 id="szövegdobozCím" style="color:rgb(3, 47, 44)">TÁNCPARTNER</h3>
+                <p class="text" style="color:rgb(0, 40, 38)">We're a community of dancers of all ages with a 
+                passion for dance. Members use DancePartner.com to connect with others for social and/or competitive 
+                dancing.</p>
+                <p class="date" style="color:rgb(11, 235, 223)">2022. 10. 01.</p>
+              </div>
+              <button id="részletekButton" class="btn">RÉSZLETEK</button>
+            </article>
+
+          <article class="tips-card">
+            <img id= "edzéstervPic" src="edzésterv.jpg" alt="edzésterv"/>
+            <div>
+              <h3 id="szövegdobozCím" style="color:rgb(2, 35, 33)">EDZÉSTERV</h3>
+              <p class="text" style="color:rgb(1, 41, 38)">We can consider the benefits of cross-training by 
+              examining all parts of the typical dance class. Think about it: cardio and endurance training are 
+              given within the structure of dance class, balances are practiced throughout, agility happens in 
+              center combinations, and flexibility is practiced during a stretch.</p>
+              <p class="date" style="color:rgb(8, 232, 217)">2022. 10. 01.</p>
+            </div>
+            <button id="részletekButton" class="btn">RÉSZLETEK</button>
+          </article>
+          
+        </article>
+      </section>
+
+      <footer id="wholeFooter" style="background-color: white;">
+          <section id="footer1">
+            <h3 id="footer1ElementAnimation">SÜTIK (COOKIES) KEZELÉSE</h3>
+            <h3 id="footer1ElementAnimation">ADATVÉDELMI IRÁNYELVEK</h3>
+            <h3 id="footer1ElementAnimation">IMPRESSZUM</h3>
+            <h3 id="footer1ElementAnimation">VÁSÁRLÁSI FELTÉTELEK</h3>
+          </section>
+
+          <section id="footer2">
+            <li><img id="logoAnimation" src="Facebook.png" alt="facebookLogo" style="width: 80px;"></li>
+            <li><img id="logoAnimation" src="Instagram.png" alt="instagramLogo" style="width: 80px;"></li>
+            <li><img id="logoAnimation" src="Twitter.png" alt="twitterLogo" style="width: 97px;"></li>
+            <li><img id="logoAnimation" src="youTube.png" alt="youTubeLogo" style="width: 80px;"></li>
+          </section>
+            <p ID="copyright">COPYRIGHT ©2022. Ms. Katalin Kocsis</p>
+      </footer>
+     
+</body>
+</html>
